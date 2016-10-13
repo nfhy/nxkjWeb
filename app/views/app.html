@@ -1,0 +1,16 @@
+<!-- top navbar-->
+<header ng-include="'app/views/cached/top-navbar.html'" ng-class="app.theme.topbar"></header>
+<!-- Sidebar-->
+<aside ng-include="'app/views/cached/sidebar.html'" ng-class="app.theme.sidebar"></aside>
+<!-- Main-->
+<section>
+   <!-- Content-->
+   <div ui-view="" autoscroll="false" ng-class="app.views.animation" class="app"></div>
+</section>
+<!-- Page footer-->
+<footer ng-include="'app/views/cached/footer.html'"></footer>
+<div class="cover-bg" ng-show="loading">
+   <div class="cover-loading">
+      <img src="app/img/loading.gif" style="height:100px;width:100px"/>加载中。。。
+   </div>
+</div>
